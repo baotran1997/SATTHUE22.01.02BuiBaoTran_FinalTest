@@ -1,0 +1,12 @@
+[INFO ] 19-04-2022 09:23:46 [main] Log - ------------------------Start TC01------------------------
+[INFO ] 19-04-2022 09:23:48 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 19-04-2022 09:23:49 [main] Log - Step 2: Login with valid username and password
+[INFO ] 19-04-2022 09:23:50 [main] Log - Expected Behavior: Check user is logged into to Railway
+[INFO ] 19-04-2022 09:23:52 [main] Log - Expected Behavior: Check Welcome user message on banner after logging in successfully
+[INFO ] 19-04-2022 09:23:52 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 19-04-2022 09:24:13 [main] Log - ------------------------Start TC01------------------------
+[INFO ] 19-04-2022 09:24:15 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 19-04-2022 09:24:16 [main] Log - Step 2: Login with valid username and password
+[INFO ] 19-04-2022 09:24:17 [main] Log - Expected Behavior: Check user is logged into to Railway
+[INFO ] 19-04-2022 09:24:19 [main] Log - Expected Behavior: Check Welcome user message on banner after logging in successfully
+[INFO ] 19-04-2022 09:24:19 [main] Log - -------------------------E---N---D-------------------------
