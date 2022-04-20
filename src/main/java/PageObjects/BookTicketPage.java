@@ -66,4 +66,43 @@ public class BookTicketPage extends BasePage{
     /**
      * Methods
      */
+    public void selectDepartDate(String departDate) throws InterruptedException {
+        Select departDateSelection = new Select(getDepartDateSelectionXpath());
+        departDateSelection.selectByVisibleText(departDate);
+    }
+    public void selectDepartFrom(String departFrom) {
+        Select departFromSelection = new Select(getDepartFromSelectionXpath());
+        departFromSelection.selectByVisibleText(departFrom);
+    }
+    public void selectArriveAt(String arriveAt) {
+        Select arriveAtSelection = new Select(getArriveAtSelectionXpath());
+        arriveAtSelection.selectByVisibleText(arriveAt);
+    }
+    public void selectSeatType(String seatType) {
+        Select seatTypeSelection = new Select(getSeatTypeSelectionXpath());
+        seatTypeSelection.selectByVisibleText(seatType);
+    }
+    public void selectTicketAmount(String ticketAmount) {
+        Select ticketAmountSelection = new Select(getTicketAmountSelectionXpath());
+        ticketAmountSelection.selectByVisibleText(ticketAmount);
+    }
+    public void clickBookTicketButton() {
+        getBookTicketButtonXpath().click();
+    }
+    public void bookTicket(String departDate, String departFrom, String arriveAt, String seatType, String ticketAmount) throws InterruptedException {
+        selectDepartDate(departDate);
+        selectDepartFrom(departFrom);
+        selectArriveAt(arriveAt);
+        selectSeatType(seatType);
+        selectTicketAmount(ticketAmount);
+        BasePage.scrollDown();
+        clickBookTicketButton();
+    }
+
+    public void repeatBookTicketWithTimes(Integer times, String departDate, String departFrom, String arriveAt, String seatType, String ticketAmount) throws InterruptedException {
+        for (int i = 0; i < times; i++) {
+            bookTicket(departDate, departFrom, arriveAt, seatType, ticketAmount);
+            BasePage.clickBookTicketTab();
+        }
+    }
 }

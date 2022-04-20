@@ -57,5 +57,32 @@ public class RegisterPage extends BasePage{
     /**
      * Methods
      */
+    public void typeEmailField(String email) {
+        getEmailXpath().sendKeys(email);
+    }
+
+    public void typePasswordField(String password) {
+        getPasswordXpath().sendKeys(password);
+    }
+
+    public void typeConfirmPasswordField(String confirmPassword) {
+        getConfirmPasswordXpath().sendKeys(confirmPassword);
+    }
+
+    public void typePassportNumberField(String passportNumber) {
+        getPassportNumberXpath().sendKeys(passportNumber);
+    }
+
+    public void clickRegisterButton() {
+        getRegisterButtonXpath().click();
+    }
+
+    public void registerAccount(String email, String password, String confirmPassword, String passportNumber) {
+        typeEmailField(email);
+        typePasswordField(password);
+        typeConfirmPasswordField(confirmPassword);
+        typePassportNumberField(passportNumber);
+        clickRegisterButton();
+    }
 }
 

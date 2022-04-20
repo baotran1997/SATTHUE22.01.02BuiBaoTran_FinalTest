@@ -41,4 +41,21 @@ public class LoginPage extends BasePage{
     /**
      * Methods
      */
+    public void typeUsernameField (String username) {
+        getUsernameXpath().sendKeys(username);
+    }
+
+    public void typePasswordField (String password) {
+        getPasswordXpath().sendKeys(password);
+    }
+
+    public void clickLoginButton() {
+        getLoginButtonXpath().click();
+    }
+
+    public void login(String username, String password) {
+        typeUsernameField(username);
+        typePasswordField(password);
+        clickLoginButton();
+    }
 }

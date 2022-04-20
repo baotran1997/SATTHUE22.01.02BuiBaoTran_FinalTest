@@ -12,7 +12,7 @@ public class BasePage {
     private By timetableTabXpath = By.xpath("//a[@href='TrainTimeListPage.cshtml']");
     private By ticketPriceTabXpath = By.xpath("//a[@href='/Page/TrainPriceListPage.cshtml']");
     private By loginTabXpath = By.xpath("//a[@href='/Account/Login.cshtml']");
-    private By bookTicketTabXpath = By.xpath("//a[@href='/Page/BookTicketPage.cshtml']");
+    private static By bookTicketTabXpath = By.xpath("//a[@href='/Page/BookTicketPage.cshtml']");
     private By contactTabXpath = By.xpath("//a[@href='/Page/Contact.cshtml']");
     private By logoutTabXpath = By.xpath("//a[@href='/Account/Logout']");
     private By registerTabXpath = By.xpath("//a[@href='/Account/Register.cshtml']");
@@ -31,7 +31,7 @@ public class BasePage {
     public WebElement getLoginTabXpath() {
         return Constants.DRIVER.findElement(loginTabXpath);
     }
-    public WebElement getBookTicketTabXpath() {
+    public static WebElement getBookTicketTabXpath() {
         return Constants.DRIVER.findElement(bookTicketTabXpath);
     }
     public WebElement getContactTabXpath() {
@@ -49,4 +49,32 @@ public class BasePage {
     /**
      * Methods
      */
+    public static void scrollDown() {
+        JavascriptExecutor jse = (JavascriptExecutor) Constants.DRIVER;
+        jse.executeScript("window.scrollBy(0,350)");
+    }
+
+    public void navigateToRegisterPage() {
+        getRegisterTabXpath().click();
+    }
+
+    public void navigateToLoginPage() {
+        scrollDown();
+        getLoginTabXpath().click();
+    }
+
+    public void navigateToBookTicketPage() {
+        scrollDown();
+        getBookTicketTabXpath().click();
+    }
+
+    public static void clickBookTicketTab() {
+        getBookTicketTabXpath().click();
+    }
+
+    public void navigateToMyTicketPage() {
+        scrollDown();
+        getMyTicketTabXpath().click();
+    }
+
 }

@@ -23,10 +23,10 @@ public class BaseTest {
         WebDriverUtilities.navigateTo(Constants.HOME_PAGE_URL);
     }
 
-    @AfterMethod
-    public void tearDown() {
-        WebDriverUtilities.quitDriver();
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        WebDriverUtilities.quitDriver();
+//    }
 
     @DataProvider
     public Iterator<Object[]> getData() throws IOException {
