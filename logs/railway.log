@@ -1,0 +1,28 @@
+[INFO ] 20-04-2022 11:58:18 [main] Log - ------------------------Start Test case FTTC01------------------------
+[INFO ] 20-04-2022 11:58:18 [main] Log - Pre-condition: Create and activate a new account
+[INFO ] 20-04-2022 11:58:20 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 20-04-2022 11:58:21 [main] Log - Step 2: Login with a valid account
+[INFO ] 20-04-2022 11:58:23 [main] Log - Step 3: Book more than 6 tickets with different Depart Stations
+[INFO ] 20-04-2022 11:58:24 [main] Log - Book ticket 1 with valid info
+[INFO ] 20-04-2022 11:58:25 [main] Log - Book ticket 2 with valid info
+[INFO ] 20-04-2022 11:58:28 [main] Log - Book ticket 3 with valid info
+[INFO ] 20-04-2022 11:58:30 [main] Log - Book ticket 4 with valid info
+[INFO ] 20-04-2022 11:58:32 [main] Log - Book ticket 5 with valid info
+[INFO ] 20-04-2022 11:58:34 [main] Log - Book ticket 5 with valid info
+[INFO ] 20-04-2022 11:58:36 [main] Log - Step 4: Click on "My ticket" tab
+[INFO ] 20-04-2022 11:58:37 [main] Log - Step 5: Select one of booked Depart Station in "Depart Station"
+dropdown list
+[INFO ] 20-04-2022 11:58:37 [main] Log - Select Depart Station is Đà Nẵng
+[INFO ] 20-04-2022 11:58:38 [main] Log - Compare Depart Station
+[INFO ] 20-04-2022 11:58:38 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 20-04-2022 11:58:45 [main] Log - ------------------------Start Test case FTTC02------------------------
+[INFO ] 20-04-2022 11:58:45 [main] Log - Pre-condition: Create and activate a new account
+[INFO ] 20-04-2022 11:58:48 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 20-04-2022 11:58:49 [main] Log - Step 2: Login with a valid account
+[INFO ] 20-04-2022 11:58:51 [main] Log - Step 3: Book more than 6 tickets
+[INFO ] 20-04-2022 11:59:10 [main] Log - Step 4: Click on "My ticket" tab
+[INFO ] 20-04-2022 11:59:11 [main] Log - Step 5: Enter invalid date into "Depart Date". Ex: 4222022
+[INFO ] 20-04-2022 11:59:12 [main] Log - Step 6: Click "Apply filter" button
+[INFO ] 20-04-2022 11:59:12 [main] Log - Expected Behavior:Message "The date format is wrong, date filter is ignored.
+Example of a proper date: Today is <mm/dd/yyyy>"
+[INFO ] 20-04-2022 11:59:12 [main] Log - -------------------------E---N---D-------------------------
